@@ -1,0 +1,54 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+html, body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $gris-oscuro;
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: 1080px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $gris-medio;
+  text-align: center;
+}
+
+hr {
+  width: 70px;
+  border-top: 2px solid $gris-medio;
+}
+
+.container-fluid {
+  padding: 0
+}
+
+button.btn-dark {
+  color: $primary;
+  font-weight: bold;
+  background-color: $negro;
+  padding: .5rem 4rem;
+}
+
+a:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}

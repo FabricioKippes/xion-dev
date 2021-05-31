@@ -1,0 +1,17 @@
+name: xion-dev
+
+services:
+  node:
+    type: node:12
+    build:
+      - npm i
+    command:
+      - "npm i"
+      - "npm run serve"
+    port: 81
+tooling:
+  npm:
+    service: node
+    description: lets you run npm inside the project
+    cmd: npm
+
